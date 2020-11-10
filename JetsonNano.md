@@ -23,6 +23,7 @@ install cmake
 #### step 1 : find the correct version and download sourcecode
 
 ```bash
+$ cd /tmp
 $ wget https://github.com/Kitware/CMake/archive/v3.12.4.tar.gz
 $ sudo tar -C /tmp -xzf v3.12.4.tar.gz
 ```
