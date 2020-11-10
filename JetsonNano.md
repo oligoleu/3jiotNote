@@ -2,19 +2,18 @@ Nvidia Jetson Nano
 ===
 <h3>user: od3j  IP: 192.168.50.157</h3>
 
-|Package       |Version |    |
-|:------------:|:------:|:--:|
-|nomachine     |6.12.3_5|		
-|mosquitto     |1.4.15  |
-|go            |1.15.4  |
-|opencv        |		|
-|gocv          |        |
-|cmake         |		|https://cmake.org/install/|
-|jtop          |		|
-|vsftp         |		|
-|darknet       |		|
-|jetson-fan-ctl|		|
-
+|Package       |Version |                                               |
+|:------------:|:------:|:---------------------------------------------:|
+|nomachine     |6.12.3_5|		                                            |
+|mosquitto     |1.4.15  |                                               |
+|go            |1.15.4  |https://golang.org/dl/ (download ARMv8 version)|
+|opencv        |		    |                                               |
+|gocv          |        |                                               |
+|cmake         |3.12.4  |https://cmake.org/install/                     |
+|jtop          |		    |                                               |
+|vsftp         |		    |                                               |
+|darknet       |		    |                                               |
+|jetson-fan-ctl|		    |https://github.com.Pyrestone/jetson-fan-ctl    |
 
 -----
 install cmake 
@@ -31,7 +30,7 @@ $ sudo tar -C /tmp -xzf v3.12.4.tar.gz
 #### step 2 : build cmake
 
 ```bash
-$ cd v3.12.4.tar.gz
+$ cd CMake-3.12.4
 $ sudo ./bootstrap
 $ sudo make
 $ sudo make install
