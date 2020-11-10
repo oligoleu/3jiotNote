@@ -15,17 +15,16 @@ Nvidia Jetson Nano
 |darknet       |		    |                                               |
 |jetson-fan-ctl|		    |https://github.com.Pyrestone/jetson-fan-ctl    |
 
------
 check cuda and cudnn version
 -----
-
 ```bash
 $ nvcc -V
 ```
-![cuda_version](image/cuda_version.jpg)
------
+<img src="image/cuda_version.png" width=500 height=100>
+
 install cmake 
 -----
+
 >https://cmake.org/install/
 #### step 1 : find the correct version and download sourcecode
 
