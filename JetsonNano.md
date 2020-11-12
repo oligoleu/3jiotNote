@@ -10,7 +10,7 @@ Nvidia Jetson Nano
 |opencv        |4.4.0	  |https://forums.developer.nvidia.com/t/process-to-install-opencv-4-1-on-nano/75801|
 |gocv          |0.24.0  |https://github.com/hybridgroup/gocv/releases/tag/v0.24.0|
 |cmake         |3.12.4  |https://cmake.org/install/                     |
-|jtop          |		    |                                               |
+|jtop          |3.0.2   |https://medium.com/jacky-life/jetson-nano-9d89cbf2fc18|
 |vsftp         |		    |https://yanwei-liu.medium.com/nvidia-jetson-tx2學習筆記-六-建立外網可傳輸的ftp伺服器-be1d588c2a43|
 |darknet       |		    |                                               |
 |jetson-fan-ctl|		    |https://github.com.Pyrestone/jetson-fan-ctl    |
@@ -22,6 +22,21 @@ $ nvcc -V
 ```
 <img src="image/cuda_version.png" width=500 height=100>
 
+install jtop
+-----
+```bash
+$ sudo apt-get install python-pip python-dev build-essential 
+$ sudo pip install --upgrade pip
+$ sudo -H pip install jetson-stats
+```
+#### change power mode
+```bash
+$ sudo /usr/sbin/nvpmodel -m 0
+```
+```
+0 => MAXN
+1 => 5W
+```
 install cmake 
 -----
 >https://cmake.org/install/
@@ -45,6 +60,26 @@ $ sudo make install
 
 ```bash
 $ cmake --version 
+```
+install go
+-----
+#### step 1 : Download the archive and extract it into /usr/local
+```bash
+$ cd /usr/local
+$ wget https://golang.org/dl/go1.15.4.linux-arm64.tar.gz
+$ tar -C /usr/local -xzf go1.15.4.linux-arm64.tar.gz
+```
+#### step 2 : Add /usr/local/go/bin to the PATH environment variable
+```vim
+export PATH=$PATH:/usr/local/go/bin
+```
+```bash
+$ nano $HOME/.profile
+$ source $HOME/.profile
+```
+#### step 3 : check go version
+```bash
+$ go version
 ```
 install GoCV and OpenCV
 -----
@@ -116,4 +151,3 @@ $ make -j9 # 9 means using N-1 CPU
 $ sudo make install
 $ sudo ldconfig
 ```
-
