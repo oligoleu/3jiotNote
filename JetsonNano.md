@@ -24,12 +24,14 @@ $ nvcc -V
 
 install jtop
 -----
+>https://medium.com/jacky-life/jetson-nano-9d89cbf2fc18  
+>查看CPU與GPU相關資訊如溫度與功耗，也能將目前安裝的library顯示出來
 ```bash
 $ sudo apt-get install python-pip python-dev build-essential 
 $ sudo pip install --upgrade pip
 $ sudo -H pip install jetson-stats
 ```
-#### change power mode
+#### change power mode (you need to reboot the device)
 ```bash
 $ sudo /usr/sbin/nvpmodel -m 0
 ```
@@ -83,7 +85,7 @@ $ go version
 ```
 install GoCV and OpenCV
 -----
->https://github.com/hybridgroup/gocv/releases/tag/v0.24.0
+>https://github.com/hybridgroup/gocv/releases/tag/v0.24.0  
 >https://forums.developer.nvidia.com/t/process-to-install-opencv-4-1-on-nano/75801
 
 #### step 1 : Download GoCV
