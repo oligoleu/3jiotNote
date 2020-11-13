@@ -34,6 +34,7 @@ $ sudo -H pip install jetson-stats
 #### change power mode (you need to reboot the device)
 ```bash
 $ sudo /usr/sbin/nvpmodel -m 0
+$ sudo reboot
 ```
 ```
 0 => MAXN
