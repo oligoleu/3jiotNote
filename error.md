@@ -5,6 +5,7 @@
 
 ### OpenCV fatal error
 >download GoCV and OpenCV  
+>run the code below and re-run cmake and make  
 
 ![alt OpenCV fatal error](./image/opencv_error_boostdesc.png)
 ``` bash
