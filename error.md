@@ -6,7 +6,7 @@
 ### OpenCV fatal error
 >download GoCV and OpenCV  
 
-![alt OpenCV fatal error](./image/opencv_error_boostdesc.jpg)
+![alt OpenCV fatal error](./image/opencv_error_boostdesc.png)
 ``` bash
 cd ./cache/xfeatures2d/
 cd boostdesc
