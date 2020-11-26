@@ -15,3 +15,8 @@ $ sudo mount /dev/sdb1 p1
 ```bash
 $ sudo dd if=/dev/sde | pv | gzip -9 > /p1/iso.gz # /dev/sde is memory card's disk
 ```
+## Change file owner
+> -R can change the owner of all sub dirs or files under the dir at the same time
+```bash
+chown -R username file/dir
+```
