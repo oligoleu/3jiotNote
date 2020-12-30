@@ -69,7 +69,7 @@ install go
 #### step 1 : Download the archive and extract it into /usr/local
 ```bash
 $ cd /usr/local
-$ wget https://golang.org/dl/go1.15.4.linux-arm64.tar.gz
+$ sudo wget https://golang.org/dl/go1.15.4.linux-arm64.tar.gz
 $ sudo tar -C /usr/local -xzf go1.15.4.linux-arm64.tar.gz
 ```
 #### step 2 : Add /usr/local/go/bin to the PATH environment variable
