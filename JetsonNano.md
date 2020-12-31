@@ -145,7 +145,7 @@ $ cmake -D CMAKE_BUILD_TYPE=Release \
     -D WITH_GSTREAMER_0_10=ON \
     -D OPENCV_TEST_DATA_PATH=../opencv_extra/testdata \
     -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib-4.4.0/modules/ \
-    -DOPENCV_GENERATE_PKGCONFIG=ON \
+    -D OPENCV_GENERATE_PKGCONFIG=ON \
     .. | tee ~/cmake.txt
 ```
 #### step 4 : build
