@@ -154,3 +154,9 @@ $ make -j9 # 9 means using N-1 CPU
 $ sudo make install
 $ sudo ldconfig
 ```
+
+#### step 5 : check gocv version
+```
+$ cd ~/go/src/gocv.io/x/gocv/cmd/version/
+$ go run main.go
+```
