@@ -57,7 +57,7 @@ $ sudo chmod +x /usr/local/bin/docker-compose
 ```bash
 $ docker-compose --version
 ```
-Redis-clients sudo apt install mongodb-clients mongo 192.168.50.84
+Redis-clients
 -----
 #### step 1 : Download the current stable release of Redis
 ```bash
