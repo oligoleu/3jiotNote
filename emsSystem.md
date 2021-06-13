@@ -4,6 +4,7 @@
 |Docker Compose|1.29.2  |https://docs.docker.com/compose/install/       |
 |Redis         |6.2.4   |https://codewithhugo.com/install-just-redis-cli-on-ubuntu-debian-jessie/|
 |mongoDB       |3.6.8	  |https://www.mongodb.com/try/download/mongocli|
+|qrencode      |3.4.4	  |https://blog.gtwang.org/useful-tools/linux-qrencode-qr-code/|
 
 Docker
 -----
@@ -104,11 +105,25 @@ Mongodb-clients
 ```bash
 $ sudo apt install mongodb-clients
 ```
-#### step 2 : Check redis-cli version
+#### step 2 : Check mongodb-clients version
 ```bash
 $ mongo --version
 ```
 #### step 3 : Using mongo
 ```bash
 $ mongo host
+```
+Qrencode
+-----
+#### step 1 : Download qrencode
+```bash
+$ sudo apt install qrencode
+```
+#### step 2 : Check qrencode version
+```bash
+$ qrencode --version
+```
+#### step 3 : Using qrencode
+```bash
+$ qrencode -o image.png 'weblink'
 ```
