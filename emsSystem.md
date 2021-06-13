@@ -68,9 +68,14 @@ $ wget http://download.redis.io/redis-stable.tar.gz
 ```bash
 $ tar xvzf redis-stable.tar.gz
 ```
-#### step 3 : Copy file and apply executable permissions to the binary
+#### step 3 : install package and make
 ```bash
 $ cd redis-stable
+$ sudo apt install libjemalloc1 libjemalloc-dev gcc make
+$ make
+```
+#### step 3 : Copy file and apply executable permissions to the binary
+```bash
 $ sudo cp src/redis-cli /usr/local/bin/
 $ sudo chmod 755 /usr/local/bin/redis-cli
 ```
