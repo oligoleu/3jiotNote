@@ -61,6 +61,7 @@ Redis-clients
 -----
 #### step 1 : Download the current stable release of Redis
 ```bash
+$ apt install redis-server
 $ cd /tmp
 $ wget http://download.redis.io/redis-stable.tar.gz
 ```
